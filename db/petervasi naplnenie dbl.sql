@@ -33,3 +33,35 @@
 --INSERT INTO MENU (NAZOV_MENU) VALUES ('Piatkove menu');
 --INSERT INTO MENU (NAZOV_MENU) VALUES ('Pikantne menu');
 --INSERT INTO MENU (NAZOV_MENU) VALUES ('Medzinarodne menu');
+
+--Inserts jedalen:
+
+
+INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Bratislava', 'Jedalen pod Hradom','Pod hradom',5, 20.00 );
+INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Martin', 'Skolska jedalen pri SS','Hlavna',12, 10.00);
+INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Martin', 'Skolska jedalen pri ZS', 'Stefanikova',13, 13.05);
+INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Skalica', 'Skalicka skolska jedalen','Dolna',13 , 10.11);
+INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Trnava', 'Dobra jedalen','Horna',2,17.12);
+
+
+--inserts jedla:
+
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Kuraci steak',100,2);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Bravcove stehno na smotane',120,2.20); 
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Halusky s tvarohom',200,1.5); 
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Cestoviny s hobovou omackou',300,2.10); 
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Segedinsky gulas s knedlou',250,3.20);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Rybaci sen',300,4);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Kuraci rezen',100,1,8);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Buchty na pare',100,1);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Francuzske zemiaky',400,3.5); 
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Hovadzie stroganov',300.3);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Spaghety',300,2.80); 
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Rizoto s kuracim masom',300,3); 
+
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Zmrzlinovy pohar',100,1);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Jablkovy zavin',100,1,2);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Puding rozne druhy',100,0.80);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Kremes',100,1.2);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Smotanovy pohar',120,0.9);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Banany v cokolade',90,0.9);
