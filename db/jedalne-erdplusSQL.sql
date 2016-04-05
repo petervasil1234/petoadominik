@@ -65,13 +65,6 @@ CREATE TABLE Obsahuje
   FOREIGN KEY (id_jedla) REFERENCES Jedlo(id_jedla)
 );
 
-CREATE TABLE Zisk
-(
-  suma FLOAT NOT NULL,
-  id_zisk INT NOT NULL,
-  PRIMARY KEY (id_zisk)
-);
-
 CREATE TABLE Zamestnanec_jedalne
 (
   Id_zamestnanca INT NOT NULL,
@@ -86,12 +79,12 @@ CREATE TABLE Zamestnanec_jedalne
   FOREIGN KEY (id_pozicie) REFERENCES Pozicia(id_pozicie)
 );
 
-CREATE TABLE Produkuje
+CREATE TABLE Produkuje_zisk
 (
   mesiac INT NOT NULL,
   rok INT NOT NULL,
   id_jedalne INT NOT NULL,
-  id_zisk INT NOT NULL,
+  suma INT NOT NULL,
   PRIMARY KEY (mesiac, rok, id_jedalne, id_zisk),
   FOREIGN KEY (id_jedalne) REFERENCES Jedalen(id_jedalne),
   FOREIGN KEY (id_zisk) REFERENCES Zisk(id_zisk)
