@@ -1,38 +1,21 @@
---INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Presov', 'Jedalen pri fakultnej nemocnici', 'Stefanikova', 15.5, 143 );
---INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Giraltovce', 'Skolska jedalen v Giraltovciach', 'Fucikova', 13.7, 1765 );
---INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Presov', 'Jedalen pri zakladnej skole', 'Sabinovska', 10.7, 1411 );
---INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Bidovce', 'Jedalen Bidovce', 'Bidovce', 18.7, 211 );
---INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Kosice', 'Jedalen na ulici Jedlikovej', 'Jedlikova', 11.8, 5 );
+--Pozicie
 
---INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Veduca jedalne', 4.2);
---INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Kuchar', 3.8);
---INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Vydavac stravy', 3.5);
---INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA, POZNAMKA) VALUES ('Pomocna sila', 2.5, 'Vypomaha v kuchyni(cistenie zemiakov, umyvanie riadov)');
---INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA, POZNAMKA) VALUES ('Pokladnicka', 3.5, 'V pripade ze sa za jedlo plati na mieste');
+INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Veduca jedalne', 4.2);
+INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Kuchar', 3.8);
+INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA) VALUES ('Vydavac stravy', 3.5);
+INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA, POZNAMKA) VALUES ('Pomocna sila', 2.5, 'Vypomaha v kuchyni(cistenie zemiakov, umyvanie riadov)');
+INSERT INTO POZICIA (NAZOV_POZICIE, HODINOVA_MZDA, POZNAMKA) VALUES ('Pokladnicka', 3.5, 'V pripade ze sa za jedlo plati na mieste');
 
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Slepacia polievka s rezancami',150,0.55);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Paradajkova polievka',140,0.6);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Rybacia polievka - halaszle',150,0.6);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Francuzska polievka',150,0.55);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Sosovicova polievka',180,0.55);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Fazulova polievka so zeleninou',180,0.6);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Zeleninova polievka',150,0.45);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Bravcovy gulas',190,0.8);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Americke zemiaky',180,0.95);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Varene zemiaky mastene',200,0.75);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Ryza',150,0.6);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Zemiakova kasa',200,0.8);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Hranolky',160,0.85);
---INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Cestoviny',190,0.75);
+-- Menu:
 
---ALTER TABLE MENU 
---ADD (NAZOV_MENU VARCHAR(30) NOT NULL);
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Vegetarianske menu');
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Extra masove menu');
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Sladke menu');
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Piatkove menu');
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Pikantne menu');
---INSERT INTO MENU (NAZOV_MENU) VALUES ('Medzinarodne menu');
+ALTER TABLE MENU 
+ADD (NAZOV_MENU VARCHAR(30) NOT NULL);
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Vegetarianske menu');
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Extra masove menu');
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Sladke menu');
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Piatkove menu');
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Pikantne menu');
+INSERT INTO MENU (NAZOV_MENU) VALUES ('Medzinarodne menu');
 
 --Inserts jedalen:
 
@@ -42,9 +25,29 @@ INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values
 INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Martin', 'Skolska jedalen pri ZS', 'Stefanikova',13, 13.05);
 INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Skalica', 'Skalicka skolska jedalen','Dolna',13 , 10.11);
 INSERT INTO JEDALEN (mesto, nazov, ulica, cislo_domu, percento_navysenia) values ('Trnava', 'Dobra jedalen','Horna',2,17.12);
+INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Presov', 'Jedalen pri fakultnej nemocnici', 'Stefanikova', 15.5, 143 );
+INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Giraltovce', 'Skolska jedalen v Giraltovciach', 'Fucikova', 13.7, 1765 );
+INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Presov', 'Jedalen pri zakladnej skole', 'Sabinovska', 10.7, 1411 );
+INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Bidovce', 'Jedalen Bidovce', 'Bidovce', 18.7, 211 );
+INSERT INTO JEDALEN (mesto, nazov, ulica, percento_navysenia, cislo_domu) values ('Kosice', 'Jedalen na ulici Jedlikovej', 'Jedlikova', 11.8, 5 );
 
 
 --inserts jedla:
+
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Slepacia polievka s rezancami',150,0.55);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Paradajkova polievka',140,0.6);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Rybacia polievka - halaszle',150,0.6);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Francuzska polievka',150,0.55);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Sosovicova polievka',180,0.55);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Fazulova polievka so zeleninou',180,0.6);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Zeleninova polievka',150,0.45);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Bravcovy gulas',190,0.8);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Americke zemiaky',180,0.95);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Varene zemiaky mastene',200,0.75);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Ryza',150,0.6);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Zemiakova kasa',200,0.8);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Hranolky',160,0.85);
+INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Cestoviny',190,0.75);
 
 INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Kuraci steak',100,2);
 INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Bravcove stehno na smotane',120,2.20); 
