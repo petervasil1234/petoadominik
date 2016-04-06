@@ -79,23 +79,12 @@ CREATE TABLE Zamestnanec_jedalne
   FOREIGN KEY (id_pozicie) REFERENCES Pozicia(id_pozicie)
 );
 
-<<<<<<< HEAD
 CREATE TABLE Produkcia_zisku
-=======
-CREATE TABLE Produkuje_zisk
->>>>>>> 320203c9965abd724a1be1c71ea4b747383758c8
 (
   mesiac INT NOT NULL,
   rok INT NOT NULL,
   id_jedalne INT NOT NULL,
-<<<<<<< HEAD
   zisk FLOAT NOT NULL,
   PRIMARY KEY (mesiac, rok, id_jedalne),
   FOREIGN KEY (id_jedalne) REFERENCES Jedalen(id_jedalne)
-=======
-  suma INT NOT NULL,
-  PRIMARY KEY (mesiac, rok, id_jedalne, id_zisk),
-  FOREIGN KEY (id_jedalne) REFERENCES Jedalen(id_jedalne),
-  FOREIGN KEY (id_zisk) REFERENCES Zisk(id_zisk)
->>>>>>> 320203c9965abd724a1be1c71ea4b747383758c8
 );
