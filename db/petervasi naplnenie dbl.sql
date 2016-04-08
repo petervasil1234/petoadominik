@@ -69,4 +69,16 @@ INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Kremes',100,1.2);
 INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Smotanovy pohar',120,0.9);
 INSERT INTO JEDLO (nazov_jedla,gramaz,cena) values ('Banany v cokolade',90,0.9);
 
---dacoadkasljdk
+--dropy:
+
+drop table jedalen;
+drop table jedlo;
+drop table menu;
+drop table obsahuje;
+drop table ponuka;
+drop table pozicia;
+drop table predava;
+drop table produkuje_zisk;
+drop table zisk;
+drop table zamestnanec_jedalne;
+
