@@ -60,14 +60,14 @@ BEGIN
   FROM   dual;
 END;
 ---------------------------------------------- Jedlo
-CREATE SEQUENCE s_jedlo;
+CREATE SEQUENCE s_jedla;
 
-CREATE OR REPLACE TRIGGER t_jedlo
+CREATE OR REPLACE TRIGGER t_jedla
 BEFORE INSERT ON jedlo
 FOR EACH ROW
 
 BEGIN
   SELECT s_jedlo.NEXTVAL
-  INTO   :new.id_jedlo
+  INTO   :new.id_jedla
   FROM   dual;
 END;
