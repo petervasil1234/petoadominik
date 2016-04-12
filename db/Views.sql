@@ -71,8 +71,12 @@ CREATE VIEW vypis_jedalni_a_zamestnancov AS
 SELECT j.ID_JEDALNE, j.MESTO, j.NAZOV, j.ULICA, z.MENO, z.PRIEZVISKO FROM JEDALEN j 
 FULL OUTER JOIN ZAMESTNANEC_JEDALNE z ON j.ID_JEDALNE = z.ID_JEDALNE ORDER BY j.ID_JEDALNE;
 
---Vypis vsetkych jedalni zoradenych podla mesta
+-- Vypis vsetkych jedalni zoradenych podla mesta
 CREATE VIEW zoznam_jedalni AS
 SELECT j.NAZOV, j.MESTO, j.ULICA, j.CISLO_DOMU AS "CISLO" FROM JEDALEN j ORDER BY j.MESTO;
 
-
+-- Zoznam jedal nezaradenych do ziadneho menu
+CREATE VIEW zoznam_nezaradenych_jedal AS
+(SELECT j.NAZOV FROM JEDLO j
+MINUS
+SELECT DISTINCT jvm."Nazov jedla" FROM JEDLA_V_MENU jvm);
