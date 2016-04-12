@@ -82,3 +82,4 @@ MINUS
 SELECT DISTINCT jvm."Nazov jedla" FROM JEDLA_V_MENU jvm);
 
 
+
