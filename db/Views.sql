@@ -80,3 +80,5 @@ CREATE VIEW zoznam_nezaradenych_jedal AS
 (SELECT j.NAZOV FROM JEDLO j
 MINUS
 SELECT DISTINCT jvm."Nazov jedla" FROM JEDLA_V_MENU jvm);
+
+
