@@ -47,7 +47,7 @@ CREATE TABLE Ponuka
 CREATE TABLE Predava
 (
   datum DATE NOT NULL,
-  cas DATE NOT NULL,
+  cas VARCHAR NOT NULL,
   pocet_kusov INT NOT NULL check (pocet_kusov > 0),
   id_jedalne INT NOT NULL,
   id_jedla INT NOT NULL,
