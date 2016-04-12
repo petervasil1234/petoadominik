@@ -52,5 +52,16 @@ order by m.nazov;
 -- Oblubenost jedla
 create view oblubenost_jedla as select j.NAZOV as "Nazov jedla", sum(p.POCET_KUSOV) as "Pocet predanych ks" from predava p natural join jedlo j group by j.nazov order by SUM(p.pocet_kusov) desc;
 
+-- Vypis vsetkych zamestnancov zoradenych podla veku od najmladsieho
+CREATE VIEW zoznam_zamestnancov_podla_veku AS
+SELECT z.MENO, z.PRIEZVISKO, ROUND(((CURRENT_DATE - z.DATUM_NARODENIA)/365), 0) AS "VEK" FROM ZAMESTNANEC_JEDALNE z ORDER BY z.DATUM_NARODENIA DESC;
+
+-- Vypis jedalni a zamestnancov, ktori su v nich zamestnani
+CREATE VIEW vypis_jedalni_a_zamestnancov AS
+SELECT j.ID_JEDALNE, j.MESTO, j.NAZOV, j.ULICA, z.MENO, z.PRIEZVISKO FROM JEDALEN j FULL OUTER JOIN ZAMESTNANEC_JEDALNE z ON j.ID_JEDALNE = z.ID_JEDALNE ORDER BY j.ID_JEDALNE;
+
+--Vypis vsetkych jedalni zoradenych podla mesta
+CREATE VIEW zoznam_jedalni AS
+SELECT j.NAZOV, j.MESTO, j.ULICA, j.CISLO_DOMU AS "CISLO" FROM JEDALEN j ORDER BY j.MESTO;
 
 
